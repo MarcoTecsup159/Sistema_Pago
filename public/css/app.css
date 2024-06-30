@@ -1,0 +1,159 @@
+body {
+    font-family: Agency FB ;
+    margin: 10%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("img/olympus2.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.container {
+    margin: 10%;
+    display: flex;
+    background-color: azure;
+    border: 10px rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    text-align: center;
+}
+
+.pedido h1{
+    margin: 1%;
+}
+
+.pedido img {
+    margin: 2%;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+table {
+    width: 100%;
+    border: 10px black;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #a7a1a1;
+}
+
+.image-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.image-button img {
+    display: block;
+    width: 80px; height: 80px;
+    border-radius: 20px;
+}
+
+.image-button:hover img {
+    transform: scale(1.1); /*tamaño de la imagen */
+    box-shadow:5px 5px 15px rgb(155, 153, 153)/*sombra */
+}
+
+.QR {
+    margin: 5%;
+    width: 200px; height: 200px;
+    border-radius: 20px;
+}
+
+.qr-section img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.qr-section p, h2 {
+    margin-bottom: 5px;
+}
+
+.qr-info p {
+    margin: 5px 0;
+}
+
+.qr-info button {
+    margin-top: 10px;
+}
+
+#qr-section {
+    display: none;
+}
+
+/*subir imagen*/
+.upload-section {
+    margin: 1%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: Agency FB;
+}
+
+.upload-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.upload-section input[type="file"] {
+    display: none;
+}
+
+.upload-section label[for="fileToUpload"] {
+    margin: 0%;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-section label[for="fileToUpload"]:hover {
+    background-color: #5a5b5c;
+}
+
+/*-------------------*/
+/*BOTON DE ENVIAR*/
+
+button[type="submit"] {
+    margin: 5%;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: white;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+    background-color: #565656;
+    color: white;
+    transform: scale(0.95);
+}
